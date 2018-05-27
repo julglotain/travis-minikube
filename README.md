@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/LiliC/travis-minikube.svg?branch=master)](https://travis-ci.org/LiliC/travis-minikube)
+[![Build Status](https://travis-ci.org/julglotain/travis-minikube.svg?branch=master)](https://travis-ci.org/julglotain/travis-minikube)
 
 # travis-minikube
 
@@ -8,4 +8,4 @@ To read more in detail check out my [guest blog post](https://blog.travis-ci.com
 
 To switch Kubernetes cluster versions just replace the `1.9.0` version in the `.travis.yml` file.
 
-For `1.10.0` Kubernetes example see the [minikube-26-kube-1.10](https://github.com/LiliC/travis-minikube/tree/minikube-26-kube-1.10) branch.
+For `1.10.0` Kubernetes example see the [minikube-26-kube-1.10](https://github.com/julglotain/travis-minikube/tree/minikube-26-kube-1.10) branch.
