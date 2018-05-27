@@ -20,4 +20,9 @@ script:
 - kubectl cluster-info 
 - kubectl run travis-example --image=redis
 - kubectl get deployment
+- kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/jobs/job.yaml
+- kubectl describe jobs/countdown
+- COUNTDOWN_NAME=`kubectl get pods --selector=job-name=countdown --output=jsonpath={.items..metadata
+.name}`
+- kubectl logs "$COUNTDOWN_NAME"
 - sudo minikube delete 
